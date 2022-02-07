@@ -13,8 +13,7 @@
   "dependencies": {
     "express": "^4.16.4",
     "express-handlebars": "^3.0.1",
-    "heroku-ssl-redirect": "^0.1.1",
-    "serve-favicon": "^2.5.0"
+    "heroku-ssl-redirect": "^0.1.1"
   },
   "devDependencies": {
     "nodemon": "^1.18.10"

@@ -10,7 +10,9 @@
 
     <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
 
-    <script src="./app.js" defer></script>
+    <script src="./app.js" type="module"></script>
+
+    <link rel="shortcut icon" href="assets/icon.png" />
 
     <title>CryptoSkoodles</title>
 </head>
@@ -18,32 +20,166 @@
 <body>
 
 
-    <div>
-        <header class="header glassy">
-            <img class="logo" src="assets/logo.png" alt="logo">
-            <nav>
-                <ul class="nav__links">
-                </ul>
-            </nav>
+    <header class="header glassy">
+        <a href="#mint"> <img class="logo" src="assets/logo.png" alt="logo"> </a>
+        <nav>
+            <ul class="nav__links">
+                <li><a href="#mint">Mint</a></li>
+                <li><a href="#roadmap">Roadmap</a></li>
+                <li><a href="#team">About Us</a></li>
+            </ul>
+        </nav>
+        <div class="cta">
+            <a href="https://twitter.com/CryptoSkoodles" target="_blank"><button
+                    class="pixel-btn pixel-btn--twitter">Twitter</button></a>
+            <a href="#"><button id="metamask" class="pixel-btn pixel-btn--meta">Metamask</button></a>
+        </div>
 
-        </header>
-        <main>
-            <div class="above-the-fold">
-                <div class="glassy rounded hero" style="width: 60%;">
-                    <img src="https://i.imgflip.com/62mzgy.jpg" title="made at imgflip.com" />
+    </header>
+    <main>
+        <section class="above-the-fold" id="mint">
+            <div class="glassy rounded hero" style="width: 60%;">
 
-                    <p style="padding-top: 20px;padding-bottom: 20px;">
-                        In the meantime, why don't you follow us on Twitter to stay up to date about the project and
-                        don't miss our stealth launch.
-                    </p>
-                    <a href="https://twitter.com/CryptoSkoodles?ref_src=twsrc%5Etfw">
-                        <img style="height: 100px;" src="assets/Twitter logo.svg">
-                    </a>
+                <div style="width:100%; padding: 30px">
+                    <div style="width:100%; display: flex; justify-content:space-between">
+                        <div class="pixel" style="max-width: 40%; height: 40%">
+                            <img src="assets/opensea_profile_picture.gif" style="max-width:100%">
+                        </div>
+
+                        <div style="text-align: center;width:60%; align-self: center;">
+                            Launching soon!
+                        </div>
+                    </div>
                 </div>
 
             </div>
-        </main>
-    </div>
+
+        </section>
+        <section id="roadmap">
+            <div class="hero" style="padding-top: 100px;">
+                <div style="padding: 30px;width:70%;display: flex; flex-direction: column;gap: 20px;">
+                    <div style="align-self: center;font-size: 40px; padding: 10px">
+                        Roadmap
+                    </div>
+                    <div
+                        style="border-left: 5px solid black; height: 100%;position: absolute; left: 50%; margin-left: -3px;margin-top:100px">
+
+                    </div>
+                    <div class="glassy rounded" style="padding:20px 30px;right:0; width: 48%;align-self:start">
+                        <h3 style="padding-bottom: 20px;">
+                            Phase 1:
+                        </h3>
+                        <p style="line-height: 1.3;text-align: justify; font-size: 14px">
+                            Successfully complete CryptoSkoodles and provide a smooth experience for our supports. There
+                            will be 500 free mints for those with fast fingers
+                        </p>
+                    </div>
+
+                    <div class="glassy rounded"
+                        style="padding:20px 30px;right:0; width: 48%;align-self:end; text-align: start">
+                        <h3 style="padding-bottom: 20px;">
+                            Phase 2:
+                        </h3>
+                        <p style="line-height: 1.3;text-align: justify; font-size: 14px">
+                            Create a Discord with holders only access via CollabLand verification. Conception of 3D
+                            metaverse project and sharing details with CryptoSkoodles holders.
+                        </p>
+                    </div>
+
+                    <div class="glassy rounded" style="padding:20px 30px;right:0; width: 48%;align-self:start">
+                        <h3 style="padding-bottom: 20px;">
+                            Phase 3:
+                        </h3>
+                        <p style="line-height: 1.3;text-align: justify; font-size: 14px">
+                            Use the funds generated to hire 3D artists and a game developer to bring the concept fo life
+                            +
+                            start development.
+                        </p>
+                    </div>
+
+                    <div class="glassy rounded"
+                        style="padding:20px 30px;right:0; width: 48%;align-self:end; text-align:start">
+                        <h3 style="padding-bottom: 20px;">
+                            Phase 4:
+                        </h3>
+                        <p style="line-height: 1.3;text-align: justify; font-size: 14px">
+                            Give CryptoSkoodles holders the opportunity for early access to the second project before
+                            the
+                            public. Participate in Community Events, check Sneak peeks and join AMAs.
+                        </p>
+                    </div>
+
+                    <div class="glassy rounded" style="padding:20px 30px;right:0; width: 48%;align-self:start">
+                        <h3 style="padding-bottom: 20px;">
+                            Phase 5:
+                        </h3>
+                        <p style="line-height: 1.3;text-align: justify; font-size: 14px">
+                            Open Discord to the public and start big marketing campaign. Voting on project-relevant
+                            decisions to ensure community-oriented development.
+                        </p>
+                    </div>
+
+                    <div class="glassy rounded"
+                        style="padding:20px 30px;right:0; width: 48%;align-self:end; text-align:start">
+                        <h3 style="padding-bottom: 20px;">
+                            Phase 6:
+                        </h3>
+                        <p style="line-height: 1.3;text-align: justify; font-size: 14px">
+                            Release second project and run a big twitter space to gather feedback about the game and
+                            shape the future of this project and the community.
+                        </p>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </section>
+
+        <div id="team" class="above-the-fold">
+            <div class="hero">
+                <div style="width:70%; display:flex;flex-direction: column;">
+                    <div style="align-self: center;font-size: 40px; padding: 40px">
+                        About Us
+                    </div>
+                    <div style="display: flex;justify-content: space-around">
+                        <div class="glassy rounded" style="padding: 30px;width:40%; ">
+                            <div style="display: flex;justify-content:space-between">
+                                <h3>Toby</h3>
+                                <a href="https://twitter.com/dattobyy" target="_blank"><button
+                                        class="pixel-btn pixel-btn--twitter pixel-btn-small">Twitter</button></a>
+                            </div>
+                            <p style="margin: 40px 0;line-height:1.3">
+                                Toby is a professional consultant/project manager and an NFT enthusiast since August
+                                2021.<br>
+                                His dream is to create a first of its kind project in form of a P2E game in the
+                                metaverse.
+                            </p>
+
+                        </div>
+                        <div class="glassy rounded" style="padding: 30px;width:40%; ">
+                            <div style="display: flex;justify-content:space-between">
+                                <h3>Michael</h3>
+                                <a href="https://twitter.com/NFTinator" target="_blank"><button
+                                        class="pixel-btn pixel-btn--twitter pixel-btn-small">Twitter</button></a>
+                            </div>
+
+                            <p style="margin: 20px 0;line-height:1.3">
+                                Michael is a professional developer, a master procrastinator and really quick
+                                learner.<br>
+                                He is pretty new in the NFT space but has been super excited about it since day one.<br>
+                                His dream is also to create a first of its kind project and
+                                shape
+                                the future of NFTs and the metaverse.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <skoodles-client></skoodles-client>
 
 </body>
 

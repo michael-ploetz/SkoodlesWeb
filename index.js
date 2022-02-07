@@ -1,7 +1,6 @@
 const express = require('express');
 const path = require('path');
 const sslRedirect = require('heroku-ssl-redirect').default;
-const favicon = require('serve-favicon');
 
 const app = express();
 
@@ -15,8 +14,6 @@ app.get('/', function (req, res) {
 });
 
 app.use(express.static(path.join(__dirname, 'public')));
-
-app.use(favicon(path.join(__dirname, 'public', 'assets', 'icon.png')));
 
 app.use('/api/skoodles', require('./routes/api/skoodles'));
 
